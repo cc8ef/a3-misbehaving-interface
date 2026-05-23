@@ -1,3 +1,21 @@
 body {
     background-color: rgb(224, 248, 246);
 }
+
+/* // Option 1: Make it read-only after first change
+checkbox.addEventListener('change', function () {
+        if (this.checked) {
+            // Prevent further changes
+            this.classList.add('readonly');
+            this.addEventListener('click', preventToggle);
+        }
+    });
+
+// Function to block toggling
+function preventToggle(event) {
+    event.preventDefault(); // Stops checkbox from changing state
+} 
+    Attempted to prevent interaction w checkbox, didn't work
+    lol realized i was working in css not js file whoops*/
+
+

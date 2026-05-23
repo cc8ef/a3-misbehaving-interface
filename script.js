@@ -44,22 +44,26 @@
 //         })
 //     }
 
-const myButton = document.getElementById('push');
+// const myButton = document.getElementById('push');
 
-// Add a click event listener
-myButton.addEventListener('click', function() {
-  // Change the background color to green
-  myButton.style.backgroundColor = 'green';
-  // You can also change the text color
-  myButton.style.color = 'white'; 
-});
-// make this insible lol
+// // Add a click event listener
+// myButton.addEventListener('click', function() {
+//   // Change the background color to green
+//   myButton.style.backgroundColor = 'green';
+//   // You can also change the text color
+//   myButton.style.color = 'white'; 
+// });
+// // make this insible lol
 
-const theButton = document.getElementById("push").addEventListener('click', (event) => {
-    // console.log(event.key)
+// const theButton = document.getElementById("push").addEventListener('click', (event) => {
+//     // console.log(event.key)
 
-    if (event.key = "click") {
-        console.log('hi')
-    }
-}
-)
+//     if (event.key = "click") {
+//         console.log('hi')
+//     }
+// }
+// )
+
+document.getElementById("check").disabled = true;
+// disabled the 'I understand' box so the user cannot click it, they can only unclick the 'I do not understand'
+
