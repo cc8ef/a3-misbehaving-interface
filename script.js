@@ -69,3 +69,6 @@ document.getElementById("check").disabled = true;
 
 const myButton = document.getElementById('learnmore');
 
+myButton.addEventListener('click', function() {
+    history.back(-1)
+})
