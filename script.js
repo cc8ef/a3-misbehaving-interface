@@ -67,3 +67,5 @@
 document.getElementById("check").disabled = true;
 // disabled the 'I understand' box so the user cannot click it, they can only unclick the 'I do not understand'
 
+const myButton = document.getElementById('learnmore');
+
