@@ -71,4 +71,48 @@ const myButton = document.getElementById('learnmore');
 
 myButton.addEventListener('click', function() {
     history.back(-1)
-})
+}) 
+// Really proud of this one! a button that takes you back to the last page in your history
+
+//   let countdown;       // Interval ID
+//     let timeLeft = 60;   // Initial time in seconds (change as needed)
+//     let isRunning = false;
+
+//     // Function to format time as MM:SS
+//     function formatTime(seconds) {
+//         const mins = String(Math.floor(seconds / 60)).padStart(2, '0');
+//         const secs = String(seconds % 60).padStart(2, '0');
+//         return `${mins}:${secs}`;
+//     }
+
+//     // Update the display
+//     function updateDisplay() {
+//         document.getElementById('timer').textContent = formatTime(timeLeft);
+//     }
+
+//     // Start the countdown
+//     function startTimer() {
+//         if (isRunning) return; // Prevent multiple intervals
+//         isRunning = true;
+//         countdown = setInterval(() => {
+//             if (timeLeft > 0) {
+//                 timeLeft--;
+//                 updateDisplay();
+//             } else {
+//                 clearInterval(countdown);
+//                 isRunning = false;
+//                 alert("Time's up!");
+//             }
+//         }, 1000);
+//     }
+
+let countDownTime = 60;
+const countDownElement = document.getElementById('timer');
+const interval = setInterval(function() {
+    countDownTime--;
+    countDownElement.textContent = countDownTime + ' seconds remaining';
+    if (countDownTime <= 0) {
+        clearInterval(interval);
+        countDownElement.textContent = 'Time is up!';
+    }
+}, 1000);
