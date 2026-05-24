@@ -106,7 +106,7 @@ myButton.addEventListener('click', function () {
 //         }, 1000);
 //     }
 
-let countDownTime = 10;
+let countDownTime = 60;
 const countDownElement = document.getElementById('timer');
 const interval = setInterval(function () {
     countDownTime--;
@@ -132,3 +132,8 @@ document.getElementById('contact').addEventListener('click', function() {
 // This contact us button also turns the "learn more..." button into a contact us button. Originally I was trying to have the contact us button create more contact us buttons every time it was clicked. It didn't work but I'm happy with this result
 
 
+document.getElementById('inform').addEventListener('submit', function() {
+    event.preventDefault();
+    window.alert("Incorrect. Please try again.");
+});
+ 
