@@ -116,3 +116,14 @@ const interval = setInterval(function() {
         countDownElement.textContent = 'Time is up!';
     }
 }, 1000);
+
+document.getElementById('contact').addEventListener('click', function() {
+    // var x = document.createElement("button");
+    myButton.textContent = "Contact Us"
+    // x.setAttribute("type", "button");
+    // x.setAttribute("label", "Contact us");
+  document.body.appendChild(x)
+})
+// This contact us button also turns the "learn more..." button into a contact us button. Originally I was trying to have the contact us button create more contact us buttons every time it was clicked. It didn't work but I'm happy with this result
+
+
