@@ -37,7 +37,7 @@
 // function changeStyle() {
 //     const theButton = document.getElementById("push").addEventListener('click', function() {
 //         myButton.style.backgroundColor = 'green';
-        
+
 //             button.style.backgroundColor =
 //                 "green";
 
@@ -69,9 +69,9 @@ document.getElementById("check").disabled = true;
 
 const myButton = document.getElementById('learnmore');
 
-myButton.addEventListener('click', function() {
+myButton.addEventListener('click', function () {
     history.back(-1)
-}) 
+})
 // Really proud of this one! a button that takes you back to the last page in your history
 
 //   let countdown;       // Interval ID
@@ -106,13 +106,21 @@ myButton.addEventListener('click', function() {
 //         }, 1000);
 //     }
 
-let countDownTime = 60;
+let countDownTime = 10;
 const countDownElement = document.getElementById('timer');
-const interval = setInterval(function() {
+const interval = setInterval(function () {
     countDownTime--;
     countDownElement.textContent = countDownTime + ' seconds remaining';
     if (countDownTime <= 0) {
         clearInterval(interval);
-        countDownElement.textContent = 'Time is up!';
+        if (confirm("Would you like to end this session? Your progress will be lost.") == true) {
+            text = "You pressed OK!";
+        } else {
+            window.close();
+        }
+
     }
 }, 1000);
+
+// timer to a pop up that asks if you'd like to end the session. pressing 'okay' doesn't actually end the session, but allows you to continue. pressing 'cancel' closes the tab
+
